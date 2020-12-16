@@ -4,28 +4,30 @@
   "repository": "kadma/mdsbot",
   "logo": "https://raw.githubusercontent.com/kadma/mdsbot/main/include/maid.jpg",
   "keywords": ["discord", "discordjs", "music", "bot"],
-  "MAX_PLAYLIST_SIZE": {
-    "description": "Maximo de canciones por lista de reprocucion",
-    "value": "10"
-  },
-  "PREFIX": {
-    "description": "Prefijo para usar el bot",
-    "value": "."
-  },
-  "PRUNING": {
-    "description": "ni idea XD",
-    "value": "false"
-  },
-  "TOKEN": {
-    "description": "Token del bot de discord",
-    "value": ""
-  },
-  "YOUTUBE_API_KEY": {
-    "description": "Api key de youtube",
-    "value": ""
-  },
-  "SOUNDCLOUD_CLIENT_ID": {
-    "description": "Cliend ID de souncloud",
-    "value": ""
+  "env": {
+    "MAX_PLAYLIST_SIZE": {
+      "description": "Maximo de canciones por lista de reprocucion",
+      "value": "10"
+    },
+    "PREFIX": {
+      "description": "Prefijo para usar el bot",
+      "value": "."
+    },
+    "PRUNING": {
+      "description": "ni idea XD",
+      "value": "false"
+    },
+    "TOKEN": {
+      "description": "Token del bot de discord",
+      "value": ""
+    },
+    "YOUTUBE_API_KEY": {
+      "description": "Api key de youtube",
+      "value": ""
+    },
+    "SOUNDCLOUD_CLIENT_ID": {
+      "description": "Cliend ID de souncloud",
+      "value": ""
+    }
   }
 }
