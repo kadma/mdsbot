@@ -27,7 +27,8 @@
     },
     "SOUNDCLOUD_CLIENT_ID": {
       "description": "Cliend ID de souncloud",
-      "value": ""
+      "value": "",
+      "required": false
     }
   }
 }
