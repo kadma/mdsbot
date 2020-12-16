@@ -1,13 +1,11 @@
 {
-  "name": "evobot",
-  "version": "0.9.0",
-  "description": "Discord music bot built with discord.js",
+  "name": "mdsbot",
+  "version": "0.0.1",
+  "description": "Bot de musica creado discord.js",
   "main": "index.js",
-  "author": "Erit Islami <eritislami@gmail.com>",
   "private": true,
-  "homepage": "https://github.com/eritislami/evobot",
-  "repository": "github:eritislami/evobot",
-  "bugs": "https://github.com/eritislami/evobot/issues",
+  "homepage": "https://github.com/kadma/mdsbot",
+  "repository": "github:kadma/mdsbot",
   "engines": {
     "node": ">=12.0.0"
   },
