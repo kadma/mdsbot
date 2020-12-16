@@ -2,10 +2,10 @@ const fs = require("fs");
 
 module.exports = {
   name: "clips",
-  description: "List all clips",
+  description: "Listar todos los clips",
   execute(message) {
     fs.readdir("./sounds", function(err, files) {
-      if (err) return console.log("Unable to read directory: " + err);
+      if (err) return console.log("No se puede leer el directorio: " + err);
 
       let clips = [];
 

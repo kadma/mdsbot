@@ -4,20 +4,20 @@ module.exports = {
   name: "queue",
   cooldown: 5,
   aliases: ["q"],
-  description: "Show the music queue and now playing.",
+  description: "Mostrar la lista de la música y reproducir ahora.",
   async execute(message) {
     const permissions = message.channel.permissionsFor(message.client.user);
     if (!permissions.has(["MANAGE_MESSAGES", "ADD_REACTIONS"]))
-      return message.reply("Missing permission to manage messages or add reactions");
+      return message.reply("Falta el permiso para gestionar los mensajes o añadir reacciones");
 
     const queue = message.client.queue.get(message.guild.id);
-    if (!queue) return message.channel.send("❌ **Nothing playing in this server**");
+    if (!queue) return message.channel.send("❌ **No hay nada en este servidor**");
 
     let currentPage = 0;
     const embeds = generateQueueEmbed(message, queue.songs);
 
     const queueEmbed = await message.channel.send(
-      `**Current Page - ${currentPage + 1}/${embeds.length}**`,
+      `**Página actual - ${currentPage + 1}/${embeds.length}**`,
       embeds[currentPage]
     );
 
@@ -39,12 +39,12 @@ module.exports = {
         if (reaction.emoji.name === "➡️") {
           if (currentPage < embeds.length - 1) {
             currentPage++;
-            queueEmbed.edit(`**Current Page - ${currentPage + 1}/${embeds.length}**`, embeds[currentPage]);
+            queueEmbed.edit(`**Página actual - ${currentPage + 1}/${embeds.length}**`, embeds[currentPage]);
           }
         } else if (reaction.emoji.name === "⬅️") {
           if (currentPage !== 0) {
             --currentPage;
-            queueEmbed.edit(`**Current Page - ${currentPage + 1}/${embeds.length}**`, embeds[currentPage]);
+            queueEmbed.edit(`**Página actual - ${currentPage + 1}/${embeds.length}**`, embeds[currentPage]);
           }
         } else {
           collector.stop();
@@ -74,7 +74,7 @@ function generateQueueEmbed(message, queue) {
       .setTitle("Song Queue\n")
       .setThumbnail(message.guild.iconURL())
       .setColor("#F8AA2A")
-      .setDescription(`**Current Song - [${queue[0].title}](${queue[0].url})**\n\n${info}`)
+      .setDescription(`**Canción actual - [${queue[0].title}](${queue[0].url})**\n\n${info}`)
       .setTimestamp();
     embeds.push(embed);
   }

@@ -1,13 +1,13 @@
 module.exports = {
   name: "clip",
-  description: "Plays a clip sound",
+  description: "Reproduce un sonido de clip",
   async execute(message, args) {
     const { channel } = message.member.voice;
     const queue = message.client.queue.get(message.guild.id);
 
-    if (!args.length) return message.reply("Usage: /clip <name>").catch(console.error);
-    if (queue) return message.reply("Can't play clip because there is an active queue.");
-    if (!channel) return message.reply("You need to join a voice channel first!").catch(console.error);
+    if (!args.length) return message.reply("Uso: .clip <nombre>").catch(console.error);
+    if (queue) return message.reply("No se puede reproducir el clip porque hay una cola activa.");
+    if (!channel) return message.reply("¡Tienes que unirte a un canal de voz primero!").catch(console.error);
 
     const queueConstruct = {
       textChannel: message.channel,

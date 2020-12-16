@@ -1,6 +1,6 @@
 module.exports = {
   name: "invite",
-  description: "Send bot invite link",
+  description: "Enviar enlace de invitación bot",
   execute(message) {
     return message.member
       .send(
