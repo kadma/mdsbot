@@ -2,7 +2,7 @@
   "name": "mdsbot",
   "description": "🤖 Bot de musica para discord en español 🤖",
   "repository": "kadma/mdsbot",
-  "logo": "https://i.imgur.com/JFxgbWH.png",
+  "logo": "https://raw.githubusercontent.com/kadma/mdsbot/main/include/maid.jpg",
   "keywords": ["discord", "discordjs", "music", "bot"],
   "MAX_PLAYLIST_SIZE": {
     "description": "Maximo de canciones por lista de reprocucion",
