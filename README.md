@@ -2,8 +2,9 @@
 
 
 # 🤖 Traducción EvoBot (Bot de musica para discord)
-> EvoBot is a Discord Music Bot built with discord.js & uses Command Handler from [discordjs.guide](https://discordjs.guide)
+EvoBot is a Discord Music Bot built with discord.js & uses Command Handler from [discordjs.guide](https://discordjs.guide)
 Gracias a [eritislami](https://github.com/eritislami) por este codio(Creador original)
+>Apenas empece la traduccion, el proyecto esta en su primer fase de traducción
 ## Requirements
 
 1. Discord Bot Token **[Guide](https://discordjs.guide/preparations/setting-up-a-bot-application.html#creating-your-bot)**
